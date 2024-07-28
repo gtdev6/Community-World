@@ -1,0 +1,358 @@
+
+/*-------------------------------------------------------------*/
+/*Section Mission*/
+/*-------------------------------------------------------------*/
+
+.mission-section{
+    height: fit-content;
+    background-color: var(--green-primary);
+}
+
+.mission-container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15rem 0 0 15rem;
+    overflow: hidden;
+}
+
+.mission-heading-container, .explore-heading-container{
+    height: 20rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-heading-container h1, .explore-heading-container h1{
+    font-family: Poppins, serif;
+    font-size: 4rem;
+    text-decoration: underline;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+}
+.mission-heading-container h1{
+    color: var(--green-primary);
+}
+
+.mission-cards-container, .explore-cards-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mission-card-wrapper{
+    width: 35rem;
+    height: 45rem;
+}
+
+.mission-card-wrapper, .explore-card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mission-card{
+    background-color: white;
+    width: 97%;
+    height: 98%;
+}
+
+.explore-card{
+    background-color: var(--green-primary);
+    width: 97%;
+    height: 98%;
+}
+
+
+.mission-card, .explore-card{
+    border-radius: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 25;
+
+    filter: drop-shadow(0 0 1rem  rgba(0, 0, 0, 0.4));
+}
+
+.mission-card .image-container{
+    background-color: var(--green-primary);
+}
+
+.mission-card .image-container, .explore-card .image-container{
+    width: 8rem;
+    aspect-ratio: 1 /1 ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+}
+
+.mission-card h1{
+    color: var(--green-primary);
+    font-weight: 900;
+}
+
+.mission-card h1, .explore-card h1{
+    font-family: Nunito, "serif";
+    font-size: 2.4rem;
+}
+
+.mission-card p {
+    color: var(--green-primary);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.mission-card p, .explore-card p{
+    font-family: Nunito, "serif";
+}
+
+.mission-card-left-border, .mission-card-right-border{
+    background-color: var(--green-primary);
+}
+
+
+.mission-card-left-border, .mission-card-right-border, .explore-card-left-border, .explore-card-right-border{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    z-index: 20;
+    border-radius: 3.5rem;
+}
+
+.mission-card-left-border, .explore-card-left-border{
+    bottom: 0;
+    left: 0;
+}
+
+.mission-card-right-border, .explore-card-right-border{
+    top: 0;
+    right: 0;
+}
+
+/*-------------------------------------------------------------*/
+/*Explore Mission*/
+/*-------------------------------------------------------------*/
+.explore-section{
+    background-color: white;
+}
+
+
+.explore-container{
+    background-color: var(--green-primary);
+    border-radius: 0 15rem 0 0 ;
+}
+
+.explore-heading-container{
+    color: white;
+}
+
+.explore-card-wrapper{
+    width: 40rem;
+    height: 55rem;
+}
+
+
+.explore-card .image-container{
+    background-color: var(--dark-green);
+}
+
+.explore-card{
+    background-color: var(--green-primary);
+}
+
+.explore-card-left-border, .explore-card-right-border{
+    background-color: var(--dark-orange);
+}
+
+.explore-card h1, .explore-card p{
+    color: white;
+}
+
+.explore-card .image-container img{
+    width: 4rem;
+}
+
+.explore-card p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.explore-card a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: fit-content;
+}
+
+.explore-card a{
+    font-size: 2rem;
+    font-family: Poppins, serif;
+    font-weight: 700;
+    color: #F9AE06;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.explore-card a > img{
+    height: 4rem;
+}
+
+
+
+
+
+/*=**************************************************************************=*/
+/*=-----------------------------MEDIA QUERIES--------------------------=*/
+/*=**************************************************************************=*/
+
+@media screen and (min-width: 1024px) {
+
+    main{
+        max-width: 128rem;
+        margin: 0 auto;
+    }
+
+    .hero-container{
+        height: 68rem;
+    }
+
+    .headline-container{
+        grid-area: headLine;
+    }
+
+    .quotation{
+        width: fit-content;
+    }
+
+    .quotation h1{
+        font-size: 4rem;
+        padding: 2rem 3rem;
+    }
+    .quotation-mark-left, .quotation-mark-right{
+        font-size: 5rem;
+    }
+
+    .support-line p{
+        font-size: 1.6rem;
+    }
+
+    .support-line p, .join-us-btn{
+        position: relative;
+        z-index: 15;
+    }
+
+
+    .headImage-container{
+        /*position: absolute;*/
+        height: 50rem;
+        width: 100%;
+        /*width: fit-content;*/
+        grid-area: headImage;
+
+        transform: translateY(-50%);
+    }
+
+    .headImage-wrapper{
+        /*position: static;*/
+        min-height: fit-content;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .headImage-wrapper-ellipse{
+        top: 0;
+        max-width: 100rem;
+    }
+
+    .headImage-wrapper-Image{
+        bottom: 2%;
+        right: 2%;
+        height: 70%;
+    }
+
+    /*-------------------------------------------------------------*/
+    /*Section Mission*/
+    /*-------------------------------------------------------------*/
+
+    .mission-container, .explore-container{
+        min-height: 80rem;
+    }
+
+    .mission-heading-container, .explore-heading-container{
+        height: 20rem;
+    }
+
+    .mission-heading-container h1{
+        font-size: 4rem;
+    }
+
+    .mission-cards-container, .explore-cards-container{
+        flex-direction: row;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .mission-card-wrapper{
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .image-container{
+        width: 6rem;
+    }
+
+    .mission-card h1{
+        font-size: 2rem;
+    }
+    .mission-card p{
+        font-size: 1.6rem;
+    }
+
+    /*-------------------------------------------------------------*/
+    /*Explore Section*/
+    /*-------------------------------------------------------------*/
+
+    .explore-cards-container{
+        gap: 10rem;
+    }
+
+
+    .explore-heading-container h1{
+        font-size: 3rem;
+    }
+
+    .explore-card-wrapper{
+        width: 35rem;
+        height: 50rem;
+    }
+
+    .explore-card h1{
+        font-size: 2.4rem;
+    }
+
+    .explore-card p{
+        font-size: 1.6rem;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    main{
+        border-left: 1px solid rgba(14, 37, 37, 0.5);
+        border-right: 1px solid rgba(14, 37, 37, 0.5);
+    }
+}
+
+
